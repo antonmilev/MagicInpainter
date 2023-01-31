@@ -94,7 +94,7 @@ Problems of AI apps with textures becomes more obvious when inpaint region becom
 | *<b>Texture, 400x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit</b>* |
 
 
-These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation. While AI darkens or lighten the deeper inpaint area and in the third example is unable to reproduce patterns.
+These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation, while AI apps darkens or lighten the deeper inpaint area and in the third example are unable to reproduce patterns.
 
 <p>
 For some real-life photo like beach photos, AI inpaint apps however works better and faster (after several passes):
