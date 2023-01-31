@@ -157,7 +157,7 @@ Noise removal for example can be done with improving image quality using partial
 
 # Release
 
-MagicInpainter can be installed from:
+<b>MagicInpainter 3.0 </b>can be installed from: can be installed from:
 |CPU Version (<b>3.0.1.636</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
 |---|---|
 |GPU Version (<b>3.0.1.636</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
