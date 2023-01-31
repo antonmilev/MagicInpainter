@@ -46,7 +46,7 @@ One other approach is to use GPU optimized variations of the <b>Normalized Cross
 <img src="figs/Fig2.png" width="450px"/>
 </p>
 
-Similar approach can be applied but in reverse, instead of searching for forged content to reconstruct the already known masked regions.   However, one drawback is that it is quite computational expensive, even with the proposed optimizations. One other optimization is called the <b>Fast Template Matching</b> method as described in [this](http://scribblethink.org/Work/nvisionInterface/vi95_lewis.pdf) paper , but there are many others. An open research in <b>MagicInpainter 3.0</b> is how to further improve the inpaint algorithms to work with bigger resolutions and inpaint radius (see <b>Future Work</b> section below). The method however is very precise and as shown in the tests below there is practicly zero propagation loss which allows to recostruct repreating patterns exactly and without limits.
+Similar approach can be applied but in reverse, instead of searching for forged content to reconstruct the already known masked regions.   However, one drawback is that it is quite computational expensive, even with the proposed optimizations. One other optimization is called the <b>Fast Template Matching</b> method as described in [this](http://scribblethink.org/Work/nvisionInterface/vi95_lewis.pdf) paper , but there are many others. An open research in <b>MagicInpainter 3.0</b> is how to further improve the inpaint algorithms to work with bigger resolutions and inpaint radius (see <b>Future Work</b> section below). 
 
 
 
