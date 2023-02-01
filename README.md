@@ -16,7 +16,7 @@ Both approaches have pros and cons for different areas of application. MagicInpa
 
 # Inpaint Algorithms
 
-<b>MagicInpainter 3.0</b> fills in the pixels from the missing noisy regions using the data from the undamaged area in the same image, also called <b>low noise</b> area. Training, preprocessing or additional images are not necessary. Inpaint is done only with extracting valid image data from the image area with <b>low noise</b> and then using this data to fill in areas with <b>high noise</b>. This is done with assigning each pixel or group of several pixels to the so-called <b>image keys</b> or as some researchers call them <b>image features</b>. Image keys are extracted from the non-noisy pixels neighborhood and then used to find the best match for the corresponding noisy pixels. Thus, like many other problems for inpaint we use a <b>feature space</b> composed from collected before <b>valid image keys</b>. So the process of extracting image keys can be called constructing the feature space and inpaint is then just the process of <b>decreasing image noise</b> using this feature space. 
+<b>MagicInpainter 3.0</b> fills in the pixels from the missing noisy regions using the data from the undamaged area in the same image, also called <b>low noise</b> area. Training, preprocessing or additional images are not necessary. Inpaint is done only with extracting valid image data from the image area with <b>low noise</b> and then using this data to fill in areas with <b>high noise</b>. This is done with assigning each pixel or group of several pixels to the so-called <b>image keys</b> or as some researchers call them <b>image features</b>. Image keys are extracted from the non-noisy pixels neighborhood and then used to find the best match for the corresponding noisy pixels. Thus, like many other problems for inpaint we use a <b>feature space</b> composed from collected before <b>valid image keys</b>. So the process of extracting image keys can be called constructing the feature space and inpaint is then can be called the process of <b>decreasing image noise</b> using this feature space. 
 
 Some of the parameters of the inpaint (available in Settings):
 
@@ -157,7 +157,7 @@ Noise removal for example can be done with improving image quality using partial
 
 # Release
 
-<b>MagicInpainter 3.0 </b>can be installed from: can be installed from:
+<b>MagicInpainter 3.0 </b>can be installed from: 
 |CPU Version (<b>3.0.1.636</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
 |---|---|
 |GPU Version (<b>3.0.1.636</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
