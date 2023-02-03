@@ -176,3 +176,6 @@ Noise removal for example can be done with improving image quality using partial
 Supported OS:  <b>Window 7/Vista/10/11 x64</b>
 </p>  
 
+<p>
+For introduction please see: https://youtu.be/RXDDdDnvNPY 
+</p>  
