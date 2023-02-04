@@ -97,7 +97,7 @@ Problems of AI apps with textures becomes more obvious when inpaint region becom
 These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation, while AI apps darkens or lighten the deeper inpaint area and in the third example are unable to reproduce patterns.
 
 <p>
-For some real-life photo like beach photos, AI inpaint apps works better (after several passes):
+For some real-life photos like beach photos, AI inpaint apps works better (after several passes):
 </p>
 
 | <img src="test/beach/beach1.jpg" width="200px"/> |  <img src="test/beach/beach1_inpaint_MI_r15.jpg" width="200px"/> | <img src="test/beach/snapedit_1674688053397_pass2.jpg" width="200px"/> | 
@@ -109,15 +109,11 @@ For some real-life photo like beach photos, AI inpaint apps works better (after 
 |---|---|---| 
 | *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* |
 
-Some of the recent AI libraries, like the famous HuggingFace Diffusers trained on almost <b>6 billlion images</b> (see: https://huggingface.co/runwayml/stable-diffusion-inpainting) also have quality issues. For example here is the best I could to produce with removing the dog and using the COLAB example from the link:
+Some of the recent AI libraries, like the famous HuggingFace Diffusers trained on almost <b>6 billlion images</b> (see: https://huggingface.co/runwayml/stable-diffusion-inpainting) even if very impressive for creating artificial images still have quality issues with real-life photos. For example here is the best I could to produce with removing the dog and using the COLAB example from the link:
 
 | <img src="test/dog/dog.jpg" width="200px"/> |  <img src="test/dog/dog_MI_many_passes_r45.jpg" width="200px"/> | <img src="test/dog/dog_inpaint.jpg" width="200px"/> | 
 |---|---|---| 
 | *<b>Original Image, 512x412</b>* | *<b>MagicInpainter 3.0, R45-50</b>* | *<b>HuggingFace Diffusers</b>* |
-
-
-
-
 
 
 # Limitations
@@ -125,11 +121,7 @@ Some of the recent AI libraries, like the famous HuggingFace Diffusers trained o
 MagicInpainter 3.0 work better and more precise for textures but since optimization algorithms does not uses AI and data from other photos, reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. AI assisted apps, from another hand, are trained over big datasets with many photos so they would be able sometimes to fill in missing data, even if it is not available in the given picture. 
 
 <p>
-However my tests show that AI apps are optimized more for real-life photos and are not precise enough for inpaint of vector textures. The reason for this is the heuristics nature of the neural networks, they made errors during initial inpaint that are later incremented while we go deeper in the inpaint region. For real-life photos these errors are not usually noticeble because there is no strict repetition of the patterns.  
-
-
-
-
+However my tests show that AI apps are optimized more for real-life photos and are sometimes not precise enough which is most obvious for inpaint of vector textures. The reason for this is the heuristics nature of the neural networks, they make errors during the initial inpaint that are later incremented while we go deeper in the inpaint region. For real-life photos these errors are not usually noticeble because there is no strict repetition of the patterns.  
 </p>
 
 # Future Work
