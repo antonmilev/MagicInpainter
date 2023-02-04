@@ -109,7 +109,7 @@ For some real-life photos like beach photos, AI inpaint apps works better (after
 |---|---|---| 
 | *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* |
 
-Some of the recent AI libraries, like the famous HuggingFace Diffusers trained on almost <b>6 billlion images</b> (see: https://huggingface.co/runwayml/stable-diffusion-inpainting) even if very impressive for creating artificial images still have quality issues with real-life photos. For example here is the best I could achieve with removing the dog and using the COLAB example from the link:
+Some of the recent AI libraries, like the famous HuggingFace Diffusers trained on almost <b>6 billlion images</b> (see: https://huggingface.co/runwayml/stable-diffusion-inpainting) even if very impressive for creating artificial images still have quality issues with real-life photos. For example here is the best I could achieve with removing the dog using the COLAB example from the link:
 
 | <img src="test/dog/dog.jpg" width="200px"/> |  <img src="test/dog/dog_MI_many_passes_r45.jpg" width="200px"/> | <img src="test/dog/dog_inpaint.jpg" width="200px"/> | 
 |---|---|---| 
