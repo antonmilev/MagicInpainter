@@ -49,55 +49,10 @@ One other approach is to use GPU optimized variations of the <b>Normalized Cross
 Similar approach can be applied but in reverse, instead of searching for forged content to reconstruct already known masked regions.   However, one drawback is that it is quite computational expensive, even with the proposed optimizations. One other optimization is called the <b>Fast Template Matching</b> method as described in [this](http://scribblethink.org/Work/nvisionInterface/vi95_lewis.pdf) paper , but there are many others. An open research in <b>MagicInpainter 3.0</b> is how to further improve the inpaint algorithms to work with bigger resolutions and inpaint radius (see <b>Future Work</b> section below). 
 
 
-
 # Test Results
 
-I compared results I managed to obtain with OpenCV(4.7.0) (with cv.INPAINT_NS and cv.INPAINT_TELEA), for simple textures with small inpaint regions, results from <b>MagicInpainter 3.0</b> are much better:
-
-| <img src="test/brick1/brick-texture-png-23887_red2.jpg" width="200px"/> |  <img src="test/brick1/brick-texture-png-23887_inpainted_MI.jpg" width="200px"/> | <img src="test/brick1/brick-texture-png-23887_inpainted_cv2.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 400x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>OpenCV, R15,NS</b>* |
-
-
-I also compared inpaint of texture images with some of the AI assisted applications that I found on the net. For small inpaint area, Inpaint app (from https://theinpaint.com) weren’t able to cope very well, but SnapEdit (https://snapedit.app) and ClipDrop (https://cleanup.pictures) showed good results (both are claiming to use AI). Still if we look closely will see that these AI apps have made some minor errors.
-
-
-| <img src="test/cloth1/cloth1_red1.jpg" width="200px"/> |  <img src="test/cloth1/cloth1_inpainted_MI_R32_pass2.jpg" width="200px"/> | <img src="test/cloth1/cloth1_inpainted_cv2_NS_r20.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 308x305</b>* | *<b>MagicInpainter 3.0, R32</b>* | *<b>OpenCV, R 20,NS</b>* |
-| <img src="test/cloth1/cloth1_inpainted_inpaint.jpg" width="200px"/> |  <img src="test/cloth1/snapedit_1674684435592.jpg" width="200px"/> | <img src="test/cloth1/cloth1_red1_cleanup1.jpg" width="200px"/> | 
-| *<b>InpaintApp</b>* | *<b>SnapEdit</b>* | *<b>CleanUp</b>* |
-
-| <img src="test/textur9/textur9_22.JPG" width="200px"/> |  <img src="test/textur9/textur9_22_MI_r5.jpg" width="200px"/> | <img src="test/textur9/snapedit_1674693014145.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 200x200</b>* | *<b>MagicInpainter 3.0, R5</b>* | *<b>SnapEdit</b>* |
-
-
-| <img src="test/text042/text042_red1.jpg" width="200px"/> |  <img src="test/text042/text042_red1_inpainted_MI_r5.jpg" width="200px"/> | <img src="test/text042/text042_red1_inpainted_cleanup.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 178x178</b>* | *<b>MagicInpainter 3.0, R5</b>* | *<b>CleanUp</b>* |
-
-
-Problems of these apps with textures becomes more obvious when inpaint region becomes bigger and placed at the edges, while <b>MagicInpainter 3.0</b> works fine even in some very extreme cases:
-
-
-| <img src="test/cloth3/wildtextures_small_filled1.jpg" width="200px"/> |  <img src="test/cloth3/wildtextures_small_filled1_MI_r15.jpg" width="200px"/> | <img src="test/cloth3/wildtextures_small_filled1_cleanup.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 640x640</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>CleanUp</b>* |
-
-| <img src="test/cloth6/cloth-violet-green_small_filled.jpg" width="200px"/> |  <img src="test/cloth6/cloth-violet-green_small_filled_MI_R15.jpg" width="200px"/> | <img src="test/cloth6/cloth-violet-green_small_filled_snapedit.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 400x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit</b>* |
-
-| <img src="test/cloth4/table-cloth-blue_small_filled.jpg" width="200px"/> |  <img src="test/cloth4/table-cloth-blue_small_filled_inpainted_MI_r15.jpg" width="200px"/> | <img src="test/cloth4/table-cloth-blue_small_filled_snap_edit.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Texture, 400x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit</b>* |
-
-
-These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation.
-
 <p>
-For some real-life photos like beach photos, AI inpaint apps works better (after several passes):
+For removing medium sized object from some real-life photo like beach photos, inpaint quality is comparable with the AI apps available on net (after several passes):
 </p>
 
 | <img src="test/beach/beach1.jpg" width="200px"/> |  <img src="test/beach/beach1_inpaint_MI_r15.jpg" width="200px"/> | <img src="test/beach/snapedit_1674688053397_pass2.jpg" width="200px"/> | 
@@ -109,20 +64,13 @@ For some real-life photos like beach photos, AI inpaint apps works better (after
 |---|---|---| 
 | *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* |
 
-Some of the recent AI libraries, like the famous HuggingFace Diffusers trained on almost <b>6 billlion images</b> (see: https://huggingface.co/runwayml/stable-diffusion-inpainting) even if very impressive for creating artificial images still have quality issues with real-life photos. For example here is the best I could achieve with removing the dog using the COLAB example from the link:
-
-| <img src="test/dog/dog.jpg" width="200px"/> |  <img src="test/dog/dog_MI_many_passes_r45.jpg" width="200px"/> | <img src="test/dog/dog_inpaint.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Original Image, 512x412</b>* | *<b>MagicInpainter 3.0, R45-50</b>* | *<b>HuggingFace Diffusers</b>* |
+See Also: [Tests with Textures](test/TexturesResults.md) 
 
 
 # Limitations
 
-MagicInpainter 3.0 work better and more precise for textures but since optimization algorithms does not uses AI and data from other photos, reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. AI assisted apps, from another hand, are trained over big datasets with many photos so they would be able sometimes to fill in missing data, even if it is not available in the given picture. 
+MagicInpainter 3.0 work very well for textures but data from other photos is nit used and reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. Currently application is limited to pictures with 512x512 size.
 
-<p>
-However my tests show that AI apps are optimized more for real-life photos and are sometimes not precise enough which is most obvious for inpaint of vector textures. The reason for this is the heuristics nature of the neural networks, they make errors during the initial inpaint that are later incremented while we go deeper in the inpaint region. For real-life photos these errors are not usually noticeble because there is no strict repetition of the patterns.  
-</p>
 
 # Future Work
 In comming releases there would be several improvements:
@@ -137,7 +85,7 @@ Optimization algorithms used in MagicInpainter 3.0 become sometimes too slow and
 MagicInpainter 3.0 is currently limited to single photos.
 
 - **Use AI and deep learning to speed up algorithms and optimal inpaint radius selection**
-Inpaint algorithms can be assisted with AI for classification, automation of algorithms type and optimal radius size selection. Used here inpaint algorithms can be combined with various neural networks models, especially in the cases when inpaint involves complicated features and big resolution, speed can be also significantly improved. 
+Assist inpaint algorithms with AI for classification, automation of algorithms type and optimal radius size selection. Used here inpaint algorithms can be combined with various neural networks models, especially in the cases when inpaint involves complicated features and big resolution, speed can be also significantly improved. 
 
 Following research areas are also interesting for me:
 
