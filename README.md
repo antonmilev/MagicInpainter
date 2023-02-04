@@ -52,7 +52,7 @@ Similar approach can be applied but in reverse, instead of searching for forged 
 # Test Results
 
 <p>
-For removing medium sized object from some real-life photo like beach photos, inpaint quality is comparable with the AI apps available on net (after several passes):
+For removing medium sized object from some real-life photos like beach photos, inpaint quality is comparable with the AI apps available on net (after several passes):
 </p>
 
 | <img src="test/beach/beach1.jpg" width="200px"/> |  <img src="test/beach/beach1_inpaint_MI_r15.jpg" width="200px"/> | <img src="test/beach/snapedit_1674688053397_pass2.jpg" width="200px"/> | 
@@ -69,7 +69,7 @@ See Also: [Tests with Textures](test/TexturesResults.md)
 
 # Limitations
 
-MagicInpainter 3.0 work very well for textures but data from other photos is nit used and reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. Currently application is limited to pictures with 512x512 size.
+MagicInpainter 3.0 work very well for textures but data from other photos is not used and reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. Currently application is limited to pictures with 512x512 size.
 
 
 # Future Work
