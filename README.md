@@ -78,7 +78,7 @@ I also compared inpaint of texture images with some of the AI assisted applicati
 | *<b>Texture, 178x178</b>* | *<b>MagicInpainter 3.0, R5</b>* | *<b>CleanUp</b>* |
 
 
-Problems of AI apps with textures becomes more obvious when inpaint region becomes bigger and placed at the edges, while <b>MagicInpainter 3.0</b> works fine even in some very extreme cases:
+Problems of these apps with textures becomes more obvious when inpaint region becomes bigger and placed at the edges, while <b>MagicInpainter 3.0</b> works fine even in some very extreme cases:
 
 
 | <img src="test/cloth3/wildtextures_small_filled1.jpg" width="200px"/> |  <img src="test/cloth3/wildtextures_small_filled1_MI_r15.jpg" width="200px"/> | <img src="test/cloth3/wildtextures_small_filled1_cleanup.jpg" width="200px"/> | 
@@ -94,7 +94,7 @@ Problems of AI apps with textures becomes more obvious when inpaint region becom
 | *<b>Texture, 400x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit</b>* |
 
 
-These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation, while AI apps darkens or lighten the deeper inpaint area and in the third example are unable to reproduce patterns.
+These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation.
 
 <p>
 For some real-life photos like beach photos, AI inpaint apps works better (after several passes):
