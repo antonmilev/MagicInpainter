@@ -111,7 +111,7 @@ Noise removal for example can be done with improving image quality using partial
 |GPU Version (<b>3.0.1.865</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
 |User Manual| [Magic Inpainter 3.0.pdf](docs/MagicInpainter3.0.pdf)|
 
-<p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x or 11x) . I tested the GPU app successfully on (GTX1050,RTX2070 and RTX3060). If you install the GPU version there is option in Settings to switch back to CPU.</p>
+<p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x or 11x) . I tested the GPU app successfully on (GTX1050,RTX2070 and RTX3060), with CUDA 10.1, 10.2 and 11.8 runtime. If you install the GPU version there is option in Settings to switch back to CPU.</p>
 
 <p>This version is limited to pictures with max size of 512x512.</p> 
 
