@@ -69,7 +69,7 @@ See Also: [Tests with Textures](test/TexturesResults.md)
 
 # Limitations
 
-MagicInpainter 3.0 work very well for textures but data from other photos is not used and reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. Currently application is limited to pictures with 512x512 size.
+MagicInpainter 3.0 works very well with textures and other pictures but data from other photos is not used and reconstruction of complex features, especially in photos with large sizes, may not be correct. For images with higher resolution, when noise area is large, reconstruction would be too slow, several repeats of “zoom and mask” would be necessary to fill in the missing content. Currently application is limited to pictures with 512x512 size.
 
 
 # Future Work
