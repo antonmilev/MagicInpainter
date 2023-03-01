@@ -1,6 +1,6 @@
 # Inpaint Challenge Set
 
-This is a set of several images that can be used to test DL tampering detection methods. One of the image is real and the other one is tampered. Purpose is to detect the one that is modified. All images are uncompressed, in PNG format so that there is no compression loss.
+This is a set of several images that can be used to test DL tampering detection methods. One of the image is real and the other one has inpainted regions. Purpose is to detect the one that is modified. All images are uncompressed, in PNG format so that there is no compression loss.
 
 
 | <img src="tampered/01_wall.png" width="200px"/> |  <img src="tampered/01_wall_inpaint.png" width="200px"/> 
