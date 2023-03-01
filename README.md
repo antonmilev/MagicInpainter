@@ -64,7 +64,11 @@ For removing medium sized object from some real-life photos like beach photos, i
 |---|---|---| 
 | *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* |
 
-See Also: [Tests with Textures](test/TexturesResults.md) 
+See Also: 
+<br>
+[Tests with Textures](test/TexturesResults.md) 
+<br>
+[Image Tampering Test](test/InpaintChallenge1.md) 
 
 
 # Limitations
