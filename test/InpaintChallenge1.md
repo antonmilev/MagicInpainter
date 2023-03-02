@@ -18,11 +18,6 @@ This is a set of several images that can be used to test DL tampering detection 
 | *<b>Road Original, 1600x1200</b>* | *<b>Road Inpainted, 1600x1200</b>* |
 
 
-| <img src="tampered/02_park.png" width="200px"/> |  <img src="tampered/02_park_inpaint.png" width="200px"/> 
-|---|---|
-| *<b>Park Original, 1200x1600</b>* | *<b>Park Inpainted, 1200x1600</b>* |
-
-
 | <img src="tampered/03_park.png" width="200px"/> |  <img src="tampered/03_park_inpaint.png" width="200px"/> 
 |---|---|
 | *<b>Park Original, 1200x1600</b>* | *<b>Park Inpainted, 1200x1600</b>* |
