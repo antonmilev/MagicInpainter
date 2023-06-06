@@ -104,7 +104,6 @@ Following research areas are also interesting for me:
   <li>Superposition</li>
   <li>Superresolution</li>
   <li>Stable Diffusion</li>
-  <li>Image Generation (synthesis) i</li>
 </ul> 
 
 Noise removal for example can be done with improving image quality using partial inpaint and weights coefficients rather than filling in the missing data with masks having only two values.
