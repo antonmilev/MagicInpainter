@@ -108,9 +108,14 @@ Following research areas are also interesting for me:
 
 Noise removal for example can be done with improving image quality using partial inpaint and weights coefficients rather than filling in the missing data with masks having only two values.
 
-# Update
+# Updates
 
-With version <b>3.0.2</b> there is no limitation of the image sizes!
+<b> Version 3.0.2 (from July 2023)</b>
+<ul>
+ <li> Limitation of the image sizes is removed!
+ <li> The new <b>GPU Fast</b> method is up to 5 times faster which allows processing of HD images.
+</ul> 
+
 
 # Release
 
@@ -121,8 +126,6 @@ With version <b>3.0.2</b> there is no limitation of the image sizes!
 |User Manual| [Magic Inpainter 3.0.pdf](docs/MagicInpainter3.0.pdf)|
 
 <p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x,11x). I tested the GPU app successfully on (GTX1050,RTX2070,RTX3050TI and RTX3060), with CUDA 10.1, 10.2 and 11.8 runtime. If you install the GPU version there is option in Settings to switch back to CPU.</p>
-
-<p>This version is limited to pictures with max size of 512x512.</p> 
 
 <p><b>If you do not have NVIDIA GPU card with CUDA support (GTX or RTX) install the CPU version of the application (GPU version will not work!).</b></p> 
 
