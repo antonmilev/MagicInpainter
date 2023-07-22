@@ -108,12 +108,16 @@ Following research areas are also interesting for me:
 
 Noise removal for example can be done with improving image quality using partial inpaint and weights coefficients rather than filling in the missing data with masks having only two values.
 
+# Update
+
+With version <b>3.0.2</b> there is no limitation of the image sizes!
+
 # Release
 
 <b>MagicInpainter 3.0 </b>can be installed from: 
-|CPU Version (<b>3.0.1.647</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
+|CPU Version (<b>3.0.2.153</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
 |---|---|
-|GPU Version (<b>3.0.1.876</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
+|GPU Version (<b>3.0.2.153</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
 |User Manual| [Magic Inpainter 3.0.pdf](docs/MagicInpainter3.0.pdf)|
 
 <p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x,11x). I tested the GPU app successfully on (GTX1050,RTX2070,RTX3050TI and RTX3060), with CUDA 10.1, 10.2 and 11.8 runtime. If you install the GPU version there is option in Settings to switch back to CPU.</p>
