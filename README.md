@@ -111,11 +111,15 @@ Noise removal for example can be done with improving image quality using partial
 # Updates
 
 <b> Version 3.1.190 (from July 2023)</b>
-<ul>
- <li> Limitation of the image sizes is removed!
- <li> The new <b>GPU Fast</b> patch-matching algorithm is up to 5 times faster which allows processing of HD images.
+<ul> 
  <li> Bugfixes
+ <li> Limitation of the image sizes is removed!
+ <li> The new <b>GPU Fast</b> patch-matching algorithm is up to 5 times faster which allows processing of HD images :
+
+See:
+[Comparison between GPU and GPU Fast performance](GPUPerformance.md) 
 </ul> 
+
 
 
 # Release
