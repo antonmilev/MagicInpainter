@@ -82,10 +82,10 @@ In comming releases there would be several improvements:
 - **GPU performance** - several optimizations are possible for the GPU to work even faster, also search algorithms can be greately improved
 
 - **Images with larger resolution**
-Optimization algorithms used in MagicInpainter 3.0 become sometimes too slow and unstable for images with sizes bigger than <b>512x512</b> pixels. One other limitation is that inpaint radius can not exceed <b>64</b> pixels, which currently requires several inpaint passes. 
+Optimization algorithms used in MagicInpainter 3.0 become sometimes too slow and unstable for images with high resolution (in these cases <b>Zoom In/Out</b> buttons can be used). One other limitation is that inpaint radius can not exceed <b>64</b> pixels. 
 
 
-- **Processing several images**
+- **Processing several images and video**
 MagicInpainter 3.0 is currently limited to single photos.
 
 - **Use AI and deep learning to speed up algorithms and optimal inpaint radius selection**
@@ -110,25 +110,25 @@ Noise removal for example can be done with improving image quality using partial
 
 # Updates
 
-<b> Version 3.0.2 (from July 2023)</b>
+<b> Version 3.1.190 (from July 2023)</b>
 <ul>
  <li> Limitation of the image sizes is removed!
- <li> The new <b>GPU Fast</b> method is up to 5 times faster which allows processing of HD images.
+ <li> The new <b>GPU Fast</b> patch-matching algorithm is up to 5 times faster which allows processing of HD images.
+ <li> Bugfixes
 </ul> 
 
 
 # Release
 
 <b>MagicInpainter 3.0 </b>can be installed from: 
-|CPU Version (<b>3.0.2.153</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
+|CPU Version (<b>3.1.190</b>)|  [MagicInpainter.msi](install/MagicInpainter.msi)|
 |---|---|
-|GPU Version (<b>3.0.2.153</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
+|GPU Version (<b>3.1.190</b>) | [MagicInpainterGpu.msi](install/MagicInpainterGpu.msi)|
 |User Manual| [Magic Inpainter 3.0.pdf](docs/MagicInpainter3.0.pdf)|
 
-<p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x,11x). I tested the GPU app successfully on (GTX1050,RTX2070,RTX3050TI and RTX3060), with CUDA 10.1, 10.2 and 11.8 runtime. If you install the GPU version there is option in Settings to switch back to CPU.</p>
+<p><b>MagicInpainter 3.0</b> is free for personal and non-comercial use. It is provided in two versions for CPU amd GPU. I strongly recommend using the GPU version, it works better and faster, But for this you need NVIDIA GTX or RTX video card with CUDA support (10x,11x,12x). I tested the GPU app successfully on (GTX1050,RTX2070,RTX3050TI and RTX3060), with CUDA 10.1, 10.2 and 11.8 runtime. If you install the GPU version there is option in Settings to switch back to CPU.</p>
 
-<p><b>If you do not have NVIDIA GPU card with CUDA support (GTX or RTX) install the CPU version of the application (GPU version will not work!).</b></p> 
-
+<p><b>If you do not have NVIDIA GPU card and installed CUDA driver (GTX or RTX) the GPU version of the application  will not work!</b></p> 
 
 <p><b>MagicInpainter 3.0</b> and all related source and documentation is provided under GNU GPLv3 public license.</p>
 
