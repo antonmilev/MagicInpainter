@@ -55,14 +55,15 @@ Similar approach can be applied but in reverse, instead of searching for forged 
 For removing medium sized object from some real-life photos like beach photos, inpaint quality is comparable with the AI apps available on net (after several passes):
 </p>
 
-| <img src="test/beach/beach1.jpg" width="200px"/> |  <img src="test/beach/beach1_inpaint_MI_r15.jpg" width="200px"/> | <img src="test/beach/snapedit_1674688053397_pass2.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Original Image, 862x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit, pass 2</b>* |
+| <img src="test/beach/beach1.jpg" width="200px"/> |  <img src="test/beach/beach1_inpaint_MI_r15.jpg" width="200px"/> | <img src="test/beach/snapedit_1674688053397_pass2.jpg" width="200px"/> | <img src="test/beach/beach1_adobe_PS_2023.jpg" width="200px"/> | 
+|---|---|---|---|  
+| *<b>Original Image, 862x400</b>* | *<b>MagicInpainter 3.0, R15</b>* | *<b>SnapEdit, pass 2</b>* | *<b>Adobe PS 2023</b>* |
 
 
-| <img src="test/beach3/beach.jpg" width="200px"/> |  <img src="test/beach3/beach_inpain_MI_R25.jpg" width="200px"/> | <img src="test/beach3/snapedit_1674692213009.jpg" width="200px"/> | 
-|---|---|---| 
-| *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* |
+| <img src="test/beach3/beach.jpg" width="200px"/> |  <img src="test/beach3/beach_inpain_MI_R25.jpg" width="200px"/> | <img src="test/beach3/snapedit_1674692213009.jpg" width="200px"/> | <img src="test/beach3/beach_adobe_PS_2023.jpg" width="200px"/> | 
+|---|---|---|---| 
+| *<b>Original Image, 750x500</b>* | *<b>MagicInpainter 3.0, R25</b>* | *<b>SnapEdit, pass 2</b>* | *<b>Adobe PS 2023</b>* |
+
 
 See Also: 
 <br>
