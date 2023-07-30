@@ -110,6 +110,12 @@ Noise removal for example can be done with improving image quality using partial
 
 # Updates
 
+There is also a Python library exporting the used inpaint methods:
+https://github.com/antonmilev/magicinpaintpython
+
+
+# Updates
+
 <b> Version 3.1.190 (from July 2023)</b>
 <ul> 
  <li> Bugfixes
