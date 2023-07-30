@@ -108,10 +108,10 @@ Following research areas are also interesting for me:
 
 Noise removal for example can be done with improving image quality using partial inpaint and weights coefficients rather than filling in the missing data with masks having only two values.
 
-# Updates
+# Python
 
 There is also a Python library exporting the used inpaint methods:
-https://github.com/antonmilev/magicinpaintpython
+<br>https://github.com/antonmilev/magicinpaintpython
 
 
 # Updates
