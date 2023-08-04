@@ -5,13 +5,13 @@
 <b>Inpaint</b> (or image reconstruction) is a process of filling in the missing parts of images in a natural way, preserving textures and background so that a person is not able to spot the difference. 
 <br>
 
-There are two main groups of modern image inpaint methods:
+Historically, there are two main groups of modern image inpaint methods:
 
-- **Image processing algorithms (called also traditional)**
+- **Image processing gradient algorithms (called also traditional)**
 - **Deep learning using neural networks with CNNs, etc. (called also AI methods)**
 
 
-Both approaches have pros and cons for different areas of application. MagicInpainter 3.0 uses the first group of methods. Below I have shown that while in certain cases, especially when reconstructing complex features, AI methods clearly have the edge, for others like reconstruction and generation of textures the traditional inpaint methods are still more reliable. 
+MagicInpainter however uses <b>statistis</b> methods, while these can be quite flexible in a variety of problems one drawback comparing to the generative DL and gradient methods is tht computational complexity for the statistics methods can be very high, thus one of the challenges is to optimize performance (see GPUfast).
 
 
 # Inpaint Algorithms
