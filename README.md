@@ -11,12 +11,12 @@ Historically, there are two main groups of modern image inpaint methods:
 - **Deep learning using neural networks with CNNs, etc. (called also AI methods)**
 
 
-MagicInpainter however uses <b>statistis</b> methods, while these can be quite flexible in a variety of problems one drawback comparing to the generative DL and gradient methods is tht computational complexity for the statistics methods can be very high, thus one of the challenges is to optimize performance (see GPUfast).
+MagicInpainter, on the other hand, employs <b>statistical methods</b>, which can offer great flexibility in solving various problems. However, compared to generative deep learning and gradient-based methods, one drawback of statistical approaches is the potentially high computational complexity. Therefore, a significant challenge lies in optimizing performance. 
 
 
 # Inpaint Algorithms
 
-<b>MagicInpainter 3.0</b> fills in the pixels from the missing noisy regions using the data from the undamaged area in the same image, also called <b>low noise</b> area. Training, preprocessing or additional images are not necessary. Inpaint is done only with extracting valid image data from the image area with <b>low noise</b> and then using this data to fill in areas with <b>high noise</b>. This is done with assigning each pixel or group of several pixels to the so-called <b>image keys</b> or as some researchers call them <b>image features</b>. Image keys are extracted from the non-noisy pixels neighborhood and then used to find the best match for the corresponding noisy pixels. Thus, like many other problems for inpaint we use a <b>feature space</b> composed from the collected before <b>valid image keys</b>. So the process of extracting image keys can be called constructing the feature space and inpaint is then can be called the process of <b>decreasing image noise</b> using this feature space. 
+<b>MagicInpainter 3.0</b> fills in the pixels from the missing noisy regions using the data from the undamaged area in the same image, also called <b>low noise</b> area. Training, preprocessing or additional images are not necessary. Inpain\t is done only with extracting valid image data from the image area with <b>low noise</b> and then using this data to fill in areas with <b>high noise</b>. This is done with assigning each pixel or group of several pixels to the so-called <b>image keys</b> or as some researchers call them <b>image features</b>. Image keys are extracted from the non-noisy pixels neighborhood and then used to find the best match for the corresponding noisy pixels. Thus, like many other problems for inpaint we use a <b>feature space</b> composed from the collected before <b>valid image keys</b>. So the process of extracting image keys can be called constructing the feature space and inpaint is then can be called the process of <b>decreasing image noise</b> using this feature space. 
 
 Some of the parameters of the inpaint (available in Settings):
 
