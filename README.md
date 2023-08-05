@@ -8,10 +8,10 @@
 Historically, there are two main groups of modern image inpaint methods:
 
 - **Image processing gradient algorithms (called also traditional)**
-- **Deep learning using neural networks with CNNs, etc. (called also AI methods)**
+- **Generative Deep Learning using neural networks with CNNs, etc. (called also AI methods)**
 
 
-MagicInpainter, on the other hand, employs <b>statistical methods</b>, which can offer great flexibility in solving various problems. However, compared to generative deep learning and gradient-based methods, one drawback of statistical approaches is the potentially high computational complexity. Therefore, a significant challenge lies in optimizing performance. 
+As shown below gradient methods in OpenCV are good only for small linear scratches, DL also has quality issues. MagicInpainter, on the other hand, employs <b>statistical methods</b>, which can offer great flexibility in solving various problems. However, compared to the legacy gradient-based methods, one drawback of statistical approaches is the potentially high computational complexity. Therefore, significant challenge lies in optimizing performance. 
 
 
 # Inpaint Algorithms
