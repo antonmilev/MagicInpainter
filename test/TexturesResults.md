@@ -1,6 +1,6 @@
 # Test with Textures
 
-I compared results I managed to obtain with OpenCV(4.7.0) (with cv.INPAINT_NS and cv.INPAINT_TELEA), for simple textures with small inpaint regions, results from <b>MagicInpainter 3.0</b> are much better:
+I compared results I managed to obtain with OpenCV(4.7.0) (with cv.INPAINT_NS and cv.INPAINT_TELEA), for simple textures with small inpaint region, results from <b>MagicInpainter 3.0</b> are much better:
 
 | <img src="brick1/brick-texture-png-23887_red2.jpg" width="200px"/> |  <img src="brick1/brick-texture-png-23887_inpainted_MI.jpg" width="200px"/> | <img src="brick1/brick-texture-png-23887_inpainted_cv2.jpg" width="200px"/> | 
 |---|---|---| 
