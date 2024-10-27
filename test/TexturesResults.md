@@ -52,5 +52,5 @@ Some of the recent AI libraries, like the famous HuggingFace Diffusers trained o
 
 These tests shows that MagicInpainter 3.0 preserves precisely the texture patters without penalty from the inpaint area size and algorithm can be used for textures generation. While AI darkens or lighten the deeper inpaint area and in the third example is unable to reproduce patterns.
 <p>
-My tests show that AI apps are optimized more for real-life photos and are not precise enough for inpaint of vector textures. The reason for this is the heuristics nature of the neural networks, they made errors during initial inpaint that are later incremented while we go deeper in the inpaint region. For real-life photos these errors are not usually noticeble because there is no strict repetition of the patterns.  
+My tests show that AI apps are optimized more for real-life photos and are not precise enough for inpaint of vector textures. The reason for this is the heuristics nature of the neural networks, they make errors during the initial inpaint and errors are later incremented while go deeper in the inpaint region. For real-life photos these errors are not usually noticeble because there is no strict repetition of the patterns.  
 </p>
